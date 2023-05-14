@@ -15,7 +15,7 @@ csvpath = os.path.join('..', 'Resources', 'election_data.csv')
 #Pull and read the file --> https://datatofish.com/import-csv-file-python-using-pandas/
 df = pd.read_csv(r'C:\Users\lasot\OneDrive\Desktop\Data Bootcamp\Module 3 Python\PyPoll\Resources\election_data.csv')
 
-#print my "header" info for the txt later one
+#print my "header" info for the txt later on
 print('Election Results')
 print('--------------------------------------------------------------')
 print('Total Votes:', len(df.index))
