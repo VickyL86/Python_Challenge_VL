@@ -10,10 +10,10 @@ import pandas as pd
 #found apporpriate module on ChatGPT
 from collections import Counter
 
-csvpath = os.path.join('..', 'Resources', 'election_data.csv')
+csvpath = os.path.join(os.path.dirname(__file__),"Resources", "election_data.csv")
 
-#Pull and read the file --> https://datatofish.com/import-csv-file-python-using-pandas/
-df = pd.read_csv(r'C:\Users\lasot\OneDrive\Desktop\Data Bootcamp\Module 3 Python\PyPoll\Resources\election_data.csv')
+#Pull and read the file --> Thank you Dwight!
+df = pd.read_csv(csvpath)
 
 #print my "header" info for the txt later on
 print('Election Results')
@@ -45,7 +45,7 @@ for candidate, count in counts.items():
 print('--------------------------------------------------------------')
 
 #Writing a txt file with all of my stuff - resources copied from the PyBank
-file = r'C:\Users\lasot\OneDrive\Desktop\Data Bootcamp\Module 3 Python\PyPoll\Analysis\PyPollOutput.txt'
+file = os.path.join(os.path.dirname(__file__),"Analysis","PyPollOutput.txt")
 
 with open(file, 'w') as f:
     print('Election Results',file=f)
