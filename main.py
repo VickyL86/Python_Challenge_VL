@@ -7,10 +7,11 @@ import os
 # Module for reading CSV files --> from class module
 import pandas as pd
 
-csvpath = os.path.join('..', 'Resources', 'budget_data.csv')
+#Thank you Dwight for the dirname(__file__) :D 
+csvpath = os.path.join(os.path.dirname(__file__),"Resources","budget_data.csv") 
 
-#Pull and read the file --> https://datatofish.com/import-csv-file-python-using-pandas/
-df = pd.read_csv(r'C:\Users\lasot\OneDrive\Desktop\Data Bootcamp\Module 3 Python\PyBank\Resources\budget_data.csv')
+#Pull and read the file --> Thank you Dwight! 
+df = pd.read_csv(csvpath)
 
 print('Financial Analysis')
 print('- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ')
@@ -57,11 +58,11 @@ i_min = Change_list.index(Min_Increase)
 
 print(f'Greatest Decrease in Profits: {df["Date"][i_min]} (${Min_Increase:,.0f})')
 
-#Figuring out the export... --> https://stackoverflow.com/questions/7152762/how-to-redirect-print-output-to-a-file
+#Figuring out the export... --> Thank you Dwight!
 
-file = r'C:\Users\lasot\OneDrive\Desktop\Data Bootcamp\Module 3 Python\PyBank\Analysis\Output.txt'
+file = os.path.join(os.path.dirname(__file__),"Analysis","Output.txt")
 
-#export to txt success!
+#export to txt success 
 with open(file, 'w') as f:
     print('Financial Analysis',file=f)
     print('- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ',file=f)
