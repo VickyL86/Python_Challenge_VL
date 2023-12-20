@@ -1,21 +1,19 @@
 # Python_Challenge_VL
 
-Dear Supreme Central Grader, 
+In the first part of the Challenge, I was tasked with creating a Python script to analyze the financial records of your company. You will be given a financial dataset called `budget_data.csv`. The dataset is composed of two columns: "Date" and "Profit/Losses".
 
-You will be glad to know, that this week I was able to create not one, but two new pivot tables! This time you will see them in Python - which is pretty awesome because deven days ago I didn't even
-know what Python was! It took me only 8 hours to accomplish this, which is not bad all things considered :)  
+My task was to create a Python script that analyzes the records to calculate each of the following values:
+* The total number of months included in the dataset
+* The net total amount of "Profit/Losses" over the entire period
+* The changes in "Profit/Losses" over the entire period, and then the average of those changes
+* The greatest increase in profits (date and amount) over the entire period
+* The greatest decrease in profits (date and amount) over the entire period
 
-This week I used heaps of resources which I referenced directly in the code for your review. I enjoyed this assignment way more than the VBA since I was able to use the 
-ViSCo this time - took care of misspellings and other issues. I hope you will enjoy these sad txt pivot tables, because I actually did have fun making them - even if it took me a whole Saturday :D 
+In the second part of the Challenge, you are tasked with helping a small, rural town modernize its vote-counting process.
 
-I hope you are doing well and that the paths won't give you trouble.
-
-Notable Mentions:
-This week Dwight and Mr. Murderbritches did not assist with the homework, but they remain supportive so I would like to allocate to them a special mental support credit. My boyfriend this week did not 
-provide snacks, but I think the Visual Basic week took a bigger toll on him and he is still recovering. Among resources used this week: Stack Overflow, Learn Python Programin Website, class modules, and many more. 
-
-Thank you for your unwavering support in my quest to become a Python Jedi Master. 
-
-Best, 
-
-Vicky 
+You will be given a set of poll data called `election_data.csv`. The dataset is composed of three columns: "Voter ID", "County", and "Candidate". Your task is to create a Python script that analyzes the votes and calculates each of the following values:
+* The total number of votes cast
+* A complete list of candidates who received votes
+* The percentage of votes each candidate won
+* The total number of votes each candidate won
+* The winner of the election based on popular vote
